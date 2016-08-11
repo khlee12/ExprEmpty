@@ -28,6 +28,10 @@ class ViewController: UIViewController {
                 inputtedDigit.text = action
                 userIsInMiddleOfTyping = true
             }
+            if(action=="AC"){
+                inputtedDigit.text = ""
+                userIsInMiddleOfTyping = true
+            }
             if(action=="Is Palindrome?"){
                 if let operand = inputtedDigit.text {
                     core.setOperand(operand)
